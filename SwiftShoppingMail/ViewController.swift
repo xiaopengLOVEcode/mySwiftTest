@@ -16,7 +16,7 @@ class ViewController: BaseViewController {
         button.setTitle("click", for: .normal)
         button.setTitleColor(.black, for: .normal)
         button.addTarget(self, action: #selector(didClickButton), for: .touchUpInside)
-        
+        view.addSubview(button)
         
         button.snp.makeConstraints { make in
             make.left.top.equalTo(100)

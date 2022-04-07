@@ -4,6 +4,9 @@
 
 ## User settings
 xcuserdata
+*.pyc
+.*.swp
+*~
 .DS_Store
 SwiftShoppingMail.xcodeproj/project.xcworkspace/contents.xcworkspacedata
 
