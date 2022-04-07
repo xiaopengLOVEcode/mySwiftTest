@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A65EA81D94EC88C735000B2930416BF0"
-               BuildableName = "Pods-SwiftShoppingMail.framework"
+               BuildableName = "Pods_SwiftShoppingMail.framework"
                BlueprintName = "Pods-SwiftShoppingMail"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
