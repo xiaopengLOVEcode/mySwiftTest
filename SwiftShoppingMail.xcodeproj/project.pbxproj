@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6229433A28016FD300CFCFB7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6229433928016FD300CFCFB7 /* HomeViewController.swift */; };
+		6229433C28016FDF00CFCFB7 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6229433B28016FDF00CFCFB7 /* MineViewController.swift */; };
+		6229433F2801729C00CFCFB7 /* BannnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6229433E2801729C00CFCFB7 /* BannnerView.swift */; };
+		622943412802D1CD00CFCFB7 /* ProductList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622943402802D1CD00CFCFB7 /* ProductList.swift */; };
 		629892E627FEC1AE00B6CE25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629892E527FEC1AE00B6CE25 /* AppDelegate.swift */; };
 		629892E827FEC1AE00B6CE25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629892E727FEC1AE00B6CE25 /* SceneDelegate.swift */; };
 		629892EA27FEC1AE00B6CE25 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629892E927FEC1AE00B6CE25 /* ViewController.swift */; };
@@ -44,6 +48,10 @@
 
 /* Begin PBXFileReference section */
 		308755C9F2B2ABC48F4AC061 /* Pods-SwiftShoppingMail.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftShoppingMail.release.xcconfig"; path = "Target Support Files/Pods-SwiftShoppingMail/Pods-SwiftShoppingMail.release.xcconfig"; sourceTree = "<group>"; };
+		6229433928016FD300CFCFB7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		6229433B28016FDF00CFCFB7 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		6229433E2801729C00CFCFB7 /* BannnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannnerView.swift; sourceTree = "<group>"; };
+		622943402802D1CD00CFCFB7 /* ProductList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductList.swift; sourceTree = "<group>"; };
 		629892E227FEC1AE00B6CE25 /* SwiftShoppingMail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftShoppingMail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		629892E527FEC1AE00B6CE25 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		629892E727FEC1AE00B6CE25 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +102,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6229433D2801727000CFCFB7 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				6229433E2801729C00CFCFB7 /* BannnerView.swift */,
+				622943402802D1CD00CFCFB7 /* ProductList.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
 		629892D927FEC1AE00B6CE25 = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +132,7 @@
 		629892E427FEC1AE00B6CE25 /* SwiftShoppingMail */ = {
 			isa = PBXGroup;
 			children = (
+				6229433D2801727000CFCFB7 /* Component */,
 				6298932A27FECC0300B6CE25 /* Extensions */,
 				6298932327FEC7DB00B6CE25 /* Model */,
 				6298932127FEC74B00B6CE25 /* R.generated.swift */,
@@ -128,6 +146,8 @@
 				629892F327FEC1B000B6CE25 /* Info.plist */,
 				6298932D27FED37500B6CE25 /* BaseViewController.swift */,
 				6298932F27FED41E00B6CE25 /* LoginViewController.swift */,
+				6229433928016FD300CFCFB7 /* HomeViewController.swift */,
+				6229433B28016FDF00CFCFB7 /* MineViewController.swift */,
 			);
 			path = SwiftShoppingMail;
 			sourceTree = "<group>";
@@ -351,12 +371,16 @@
 				629892E627FEC1AE00B6CE25 /* AppDelegate.swift in Sources */,
 				6298932527FEC82300B6CE25 /* Product.swift in Sources */,
 				6298932C27FECC3600B6CE25 /* UIColorExtension.swift in Sources */,
+				6229433F2801729C00CFCFB7 /* BannnerView.swift in Sources */,
 				6298932727FEC8AF00B6CE25 /* Deal.swift in Sources */,
 				6298932E27FED37500B6CE25 /* BaseViewController.swift in Sources */,
+				622943412802D1CD00CFCFB7 /* ProductList.swift in Sources */,
 				629892E827FEC1AE00B6CE25 /* SceneDelegate.swift in Sources */,
+				6229433A28016FD300CFCFB7 /* HomeViewController.swift in Sources */,
 				6298932227FEC74B00B6CE25 /* R.generated.swift in Sources */,
 				6298933027FED41E00B6CE25 /* LoginViewController.swift in Sources */,
 				6298932927FEC8EB00B6CE25 /* FakeData.swift in Sources */,
+				6229433C28016FDF00CFCFB7 /* MineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
