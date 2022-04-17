@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		62246BD5280C567900399710 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62246BD4280C567900399710 /* DetailViewController.swift */; };
+		62246BD7280C58DB00399710 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62246BD6280C58DB00399710 /* Tab.swift */; };
+		62246BD9280C64F000399710 /* CommonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62246BD8280C64F000399710 /* CommonCell.swift */; };
+		62246BDB280C713C00399710 /* DealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62246BDA280C713C00399710 /* DealViewController.swift */; };
+		62246BDD280C76DD00399710 /* CommonList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62246BDC280C76DD00399710 /* CommonList.swift */; };
+		62246BDF280C7DC200399710 /* DealListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62246BDE280C7DC200399710 /* DealListCell.swift */; };
 		6229433A28016FD300CFCFB7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6229433928016FD300CFCFB7 /* HomeViewController.swift */; };
 		6229433C28016FDF00CFCFB7 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6229433B28016FDF00CFCFB7 /* MineViewController.swift */; };
 		6229433F2801729C00CFCFB7 /* BannnerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6229433E2801729C00CFCFB7 /* BannnerView.swift */; };
@@ -48,6 +54,12 @@
 
 /* Begin PBXFileReference section */
 		308755C9F2B2ABC48F4AC061 /* Pods-SwiftShoppingMail.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftShoppingMail.release.xcconfig"; path = "Target Support Files/Pods-SwiftShoppingMail/Pods-SwiftShoppingMail.release.xcconfig"; sourceTree = "<group>"; };
+		62246BD4280C567900399710 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		62246BD6280C58DB00399710 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		62246BD8280C64F000399710 /* CommonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonCell.swift; sourceTree = "<group>"; };
+		62246BDA280C713C00399710 /* DealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealViewController.swift; sourceTree = "<group>"; };
+		62246BDC280C76DD00399710 /* CommonList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonList.swift; sourceTree = "<group>"; };
+		62246BDE280C7DC200399710 /* DealListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealListCell.swift; sourceTree = "<group>"; };
 		6229433928016FD300CFCFB7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		6229433B28016FDF00CFCFB7 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		6229433E2801729C00CFCFB7 /* BannnerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannnerView.swift; sourceTree = "<group>"; };
@@ -107,6 +119,10 @@
 			children = (
 				6229433E2801729C00CFCFB7 /* BannnerView.swift */,
 				622943402802D1CD00CFCFB7 /* ProductList.swift */,
+				62246BD6280C58DB00399710 /* Tab.swift */,
+				62246BD8280C64F000399710 /* CommonCell.swift */,
+				62246BDC280C76DD00399710 /* CommonList.swift */,
+				62246BDE280C7DC200399710 /* DealListCell.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -148,6 +164,8 @@
 				6298932F27FED41E00B6CE25 /* LoginViewController.swift */,
 				6229433928016FD300CFCFB7 /* HomeViewController.swift */,
 				6229433B28016FDF00CFCFB7 /* MineViewController.swift */,
+				62246BD4280C567900399710 /* DetailViewController.swift */,
+				62246BDA280C713C00399710 /* DealViewController.swift */,
 			);
 			path = SwiftShoppingMail;
 			sourceTree = "<group>";
@@ -371,15 +389,21 @@
 				629892E627FEC1AE00B6CE25 /* AppDelegate.swift in Sources */,
 				6298932527FEC82300B6CE25 /* Product.swift in Sources */,
 				6298932C27FECC3600B6CE25 /* UIColorExtension.swift in Sources */,
+				62246BD9280C64F000399710 /* CommonCell.swift in Sources */,
 				6229433F2801729C00CFCFB7 /* BannnerView.swift in Sources */,
 				6298932727FEC8AF00B6CE25 /* Deal.swift in Sources */,
 				6298932E27FED37500B6CE25 /* BaseViewController.swift in Sources */,
 				622943412802D1CD00CFCFB7 /* ProductList.swift in Sources */,
 				629892E827FEC1AE00B6CE25 /* SceneDelegate.swift in Sources */,
 				6229433A28016FD300CFCFB7 /* HomeViewController.swift in Sources */,
+				62246BDF280C7DC200399710 /* DealListCell.swift in Sources */,
 				6298932227FEC74B00B6CE25 /* R.generated.swift in Sources */,
+				62246BDB280C713C00399710 /* DealViewController.swift in Sources */,
+				62246BD7280C58DB00399710 /* Tab.swift in Sources */,
 				6298933027FED41E00B6CE25 /* LoginViewController.swift in Sources */,
+				62246BD5280C567900399710 /* DetailViewController.swift in Sources */,
 				6298932927FEC8EB00B6CE25 /* FakeData.swift in Sources */,
+				62246BDD280C76DD00399710 /* CommonList.swift in Sources */,
 				6229433C28016FDF00CFCFB7 /* MineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

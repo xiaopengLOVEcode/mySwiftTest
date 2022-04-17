@@ -1,39 +1,34 @@
 //
-//  PruductList.swift
+//  DealListCell.swift
 //  SwiftShoppingMail
 //
-//  Created by 夏立鹏 on 2022/4/10.
+//  Created by 夏立鹏 on 2022/4/18.
 //
 
 import Foundation
 import UIKit
 import SnapKit
 
-protocol ProductListDelegate: AnyObject {
-    func didSelectProduct(product: Product)
-}
 
-class ProductCell: CommonListCell<Product> {
+class DealListCell: CommonListCell<Deal> {
     
-    let priceLabel: UILabel
+    let progressLable: UILabel
     let productImageView: UIImageView
-    let d_TextLabel: UILabel
     
-    override var item: Product? {
+    override var item: Deal? {
         didSet {
             if let p = self.item {
-                self.productImageView.kf.setImage(with: URL(string: p.imageUrl))
-                self.textLabel?.text = p.name
-                self.priceLabel.text = "$\(p.price)"
-                self.d_TextLabel.text = p.detail
+                self.productImageView.kf.setImage(with: URL(string: p.product.imageUrl))
+                self.textLabel?.text = p.product.name
+                self.detailTextLabel?.text = p.product.desc
+                self.progressLable.text = "已经学习 \(p.progress)%"
             }
         }
     }
     
-    required override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
-        priceLabel = UILabel(frame: .zero)
+    required init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        progressLable = UILabel(frame: .zero)
         productImageView = UIImageView()
-        d_TextLabel = UILabel(frame: .zero)
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         self.setupViews()
     }
@@ -46,14 +41,13 @@ class ProductCell: CommonListCell<Product> {
         textLabel?.textColor = UIColor.hexColor(0x333333)
         detailTextLabel?.textColor = UIColor.hexColor(0x999999)
         detailTextLabel?.numberOfLines = 2
-        priceLabel.textColor = UIColor.hexColor(0xe23b41)
-        priceLabel.font = UIFont.systemFont(ofSize: 15)
+        progressLable.textColor = UIColor.hexColor(0xe23b41)
+        progressLable.font = UIFont.systemFont(ofSize: 15)
         productImageView.contentMode = .scaleAspectFill
         productImageView.clipsToBounds = true
         
-        contentView.addSubview(priceLabel)
+        contentView.addSubview(progressLable)
         contentView.addSubview(productImageView)
-        contentView.addSubview(d_TextLabel)
         
         productImageView.snp.makeConstraints({ (make) in
             make.left.equalTo(contentView).offset(20)
@@ -68,12 +62,12 @@ class ProductCell: CommonListCell<Product> {
             make.right.equalTo(contentView).offset(-20)
         })
         
-        priceLabel.snp.makeConstraints { (make) in
+        progressLable.snp.makeConstraints { (make) in
             make.left.equalTo(textLabel!)
             make.centerY.equalTo(contentView)
         }
         
-        d_TextLabel.snp.makeConstraints({ (make) in
+        detailTextLabel?.snp.makeConstraints({ (make) in
             make.left.equalTo(textLabel!)
             make.bottom.equalTo(productImageView)
             make.right.equalTo(contentView).offset(-20)
@@ -83,4 +77,3 @@ class ProductCell: CommonListCell<Product> {
     
 
 }
-
