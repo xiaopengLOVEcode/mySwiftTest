@@ -24,6 +24,8 @@ class DealViewController: BaseViewController, CommonListDelegate {
         productList.snp.makeConstraints { make in
             make.left.right.bottom.equalToSuperview()
         }
+        
+        
     }
     
 
