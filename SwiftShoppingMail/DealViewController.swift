@@ -25,7 +25,6 @@ class DealViewController: BaseViewController, CommonListDelegate {
             make.left.right.bottom.equalToSuperview()
         }
         
-        
     }
     
 
